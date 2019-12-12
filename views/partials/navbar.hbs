@@ -1,0 +1,24 @@
+<nav class="red">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">Logo</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+       
+        {{#if isIndex}}
+      <li class="active"><a href="/">BD</a></li>
+      {{else}}
+      <li><a href="/">BD</a></li>
+      {{/if}}
+      {{#if isCreate}}
+      <li class="active"><a href="/create">Create</a></li>
+      {{else}}
+      <li><a href="/create">Create</a></li>
+      {{/if}}  
+      {{#if isInfo}}
+      <li class="active"><a href="/info">info</a></li>
+      {{else}}
+      <li><a href="/info">info</a></li>
+      {{/if}}  
+      
+      </ul>
+    </div>
+  </nav>

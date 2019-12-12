@@ -1,0 +1,25 @@
+<h2>The page</h2>
+
+{{#if todos.length}}
+<ul>
+  {{#each todos}}
+  <li class="todo">
+    
+      <label>
+        {{#if completed}}        
+        <span >{{title1}}</span>
+        {{else}}        
+        <span >{{title1}}</span>
+        {{/if}}
+
+        <input type="hidden" value="{{_id}}" name="id">
+
+        <button class="btn btn-small" type="submit">Check</button>
+      </label>
+    </form>
+  </li>
+  {{/each}}
+</ul>
+{{else}}
+<p>No accs!((</p>
+{{/if}}
